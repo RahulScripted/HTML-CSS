@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    padding: 15px 30px;
+}
+.nav-var{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.part1 .circle{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #122131;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.part2 h4,
+.part2 h5{
+    font-size: 1.5vw;
+    color: #222;
+    cursor: pointer;
+}
+.part2 h5 span{
+    margin-left: 10px;
+    color: #555;
+}
+.menu-bar i{
+    font-size: 1.8vw;
+    cursor: pointer;
+    display: none;
+}
+.nav-bar-2{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.65vw;
+}
+.part{
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+}
+.part-1{
+    width: 100%;
+    height: 40%;
+    height: calc();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 0 45px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.part-1::-webkit-scrollbar{
+    opacity: 0;
+    height: 7px;
+}
+.part-1::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background-color: orange;
+}
+.part-1 .elem{
+    flex-shrink: 0;
+    font-size: 8vw;
+    line-height: 8vw;
+    font-weight: 300;
+}
+.part-2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow-x: auto;
+}
+.part-2::-webkit-scrollbar{
+    display: none;
+}
+.part-2 img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width:600px){
+    .part1 .circle{
+        width: 3vw;
+        height: 3vw;
+    }
+    .part2 h4{
+        display: none;
+    }
+    .part2 h5{
+        font-size: 4vw;
+    } 
+    .menu-bar i{
+        display: initial;
+        font-size: 5vw;
+    }
+    .nav-bar-2{
+        gap: 10px;
+        font-size: 3vw;
+    }
+    .part-1{
+        gap: 110px;
+    }
+    .part-1 .elem{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+}

@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 20px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 40px 90px;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 90px;
+}
+.left{
+    width: 48%;
+    height: 100%;
+}
+.left h1{
+    font-size: 8vw;
+    line-height: 8vw;
+    margin-bottom: 50px;
+}
+.left .bottom .colors{
+    width: fit-content;
+    border: 1.5px solid #122113;
+    padding: 6px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.left .bottom .colors h5{
+    font-size: 1.2vw;
+}
+.left .bottom .colors .color-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.left .bottom .colors .color-theme .color1{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+.left .bottom .colors .color-theme .color2{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #321d02;
+}
+.left .details{
+    display: flex;
+    flex-direction: column;
+}
+.left .details h4{
+    font-size: 2vw;
+    line-height: 2vw;
+    margin-bottom: 20px;
+}
+.left .details p{
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    color: #444;
+    width: 85%;
+}
+.right{
+    margin-top: 80px;
+    width: 35%;
+    height: 80%;
+    position: relative;
+}
+.right .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right .top h4{
+    font-size: 2.4vw;
+    font-weight: 500;
+}
+.right .top p{
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .top i{
+    font-size: 1.35vw;
+    margin: 0 3px 0 7px;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right .black-circle{
+    position: absolute;
+    right: -20%;
+    top: 20%;
+    z-index: 1;
+    width: 12vw;
+    height: 12vw;
+    color: #fff;
+    background-color: #171616;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.95vw;
+}
+.right .cap{
+    width: fit-content;
+    font-size: 1.85vw;
+    font-weight: 600;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 15%;
+    left: -30%;
+}
+
+/* Responsive */
+
+@media (max-width : 768px){
+    .main{
+        padding: 50px 40px;
+    }
+    .left .details p{
+        font-size: 2vw;
+        line-height: 2vw;
+        width: 100%;
+    }
+    .left .bottom .colors h5{
+        font-size: 2vw;
+    }
+    .left .bottom .colors .color-theme .color1{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .left .bottom .colors .color-theme .color2{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}
+
+@media (max-width:550px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left h1{
+        font-size: 14vw;
+        line-height: 14vw;
+        margin-bottom: 20px;
+    }
+    .left .bottom .colors h5{
+        font-size: 1.4vw;
+    }
+    .left .details h4{
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-bottom: 30px;
+    }
+    .left .details p{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .right{
+        width: 100%;
+        height: 80%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .right .top{
+        margin-bottom: 20px;
+    }
+    .right .top h4{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .right .top p{
+        font-size: 3.5vw;
+    }
+    .right .top i{
+        font-size: 3vw;
+    }
+    .right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .right .black-circle{
+        width: 14vw;
+        height: 14vw;
+        right: -8%;
+        font-size: 2.45vw;
+    }
+    .right .cap{
+        display: none;
+    }
+    .left .bottom .colors .color-theme .color1{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .left .bottom .colors .color-theme .color2{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .left .bottom .colors h5{
+        font-size: 3vw;
+    }
+}

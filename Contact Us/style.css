@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #96d3ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain{
+    margin: 10px 10px;
+    width: 700px;
+    padding: 20px 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.contain .left{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 30px;
+    border-right: 2px solid #999;
+    flex-wrap: wrap;
+}
+.contain .left .left-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.contain .left .left-1 i{
+    font-size: 20px;
+    color: #227be2;
+    margin-bottom: 5px;
+}
+.contain .left .left-1 p{
+    font-size: 15px;
+    color: #333;
+}
+.contain .right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+.contain .right h2{
+    font-size: 24px;
+    color: #227be2;
+    margin-bottom: 5px;
+}
+.contain .right p{
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+.contain .right .form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contain .right .form input{
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.4px solid #999;
+    outline: none;
+}
+.contain .right .form textarea{
+    padding: 3px 10px;
+    resize: none;
+    border-radius: 10px;
+    border: 1.4px solid #999;
+    font-size: 15px;
+    outline: none;
+}
+.contain .right .form button{
+    margin-top: 10px;
+    width: 115px;
+    height: 30px;
+    background-color: #227be2;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.4s ease-in-out;
+}
+.contain .right .form button:hover{
+    background-color: #4e9af2;
+    box-shadow: none;
+}
+
+@media screen and (max-width:650px) {
+    .contain{
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .contain .left{
+        width: 100%;
+        margin-top: 8%;
+        flex-direction: row;
+        padding-right: 0;
+        border-right: 0;
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}

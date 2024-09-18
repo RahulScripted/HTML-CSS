@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+ul{
+    position: relative;
+    display: flex;
+}
+ul li{
+    position: relative;
+    margin: 0 30px;
+    list-style: none;
+    transform: rotate(-30deg) skew(25deg);
+    width: 60px;
+    height: 60px;
+}
+ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px !important;
+    color: #fff;
+}
+ul li:nth-child(1) span{
+    background-color: #1978e5;
+}
+ul li:nth-child(2) span{
+    background-color: #e33cde;
+}
+ul li:nth-child(3) span{
+    background-color: #53aae8;
+}
+ul li:nth-child(4) span{
+    background-color: #ec4727;
+}
+ul li:hover span:nth-child(5){
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+ul li:hover span:nth-child(4){
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+ul li:hover span:nth-child(3){
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(2){
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(1){
+    transform: translate(0,0);
+    opacity: 0.2;
+}
+
+/* Responsive */
+@media screen and (max-width:550px) {
+    ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    ul li{
+        margin: 30px;
+    }
+}

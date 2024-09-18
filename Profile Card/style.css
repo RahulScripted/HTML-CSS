@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 285px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    position: relative;
+    margin: 10px;
+}
+.profile-card::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #3c8ce2;
+    border-radius: 10px 10px 0 0;
+}
+.image{
+    z-index: 100;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #3c8ce2;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.content .name{
+    font-size: 22px;
+    color: #222;
+}
+.content .job{
+    font-size: 15px;
+    color: #333;
+}
+.media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: #3c8ce2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    font-style: 15px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.buttons button{
+    margin: 0 7px;
+    padding: 6px 25px;
+    font-size: 13px;
+    border-radius: 25px;
+    border: none;
+    background-color: #1f77d5;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+}
+.buttons button:hover{
+    background-color: #4190e5;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.about .about-details{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1.5px solid #999;
+    padding-right: 15px;
+}
+.about .about-details:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+.about .about-details i{
+    margin: 0 4px;
+}
