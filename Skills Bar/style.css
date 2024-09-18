@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1596db;
+}
+.container{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    position: relative;
+}
+.heading{
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+    color: #222;
+    font-weight: 600;
+}
+.skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
+.skill-box .skill-per{
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color: #66666649;
+}
+.skill-per .skill-tool{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: #1596db;
+    margin-top: 8px;
+    animation: progress 3s forwards ease-in-out;
+}
+@keyframes progress{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.tooltip{
+    position: absolute;
+    right: -11px;
+    top: -30px;
+    background-color: #1596db;
+    color: #fff;
+    padding: 2px 4px;
+    font-size: 12px;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    top: 20px;
+    right: 12px;
+    position: absolute;
+    background-color: #1596db;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skill-tool-css{
+    display: block;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: #1596db;
+    margin-top: 8px;
+    animation: progress 3s forwards ease-in-out;
+}
+.skill-tool-javascript{
+    display: block;
+    position: relative;
+    width: 55%;
+    height: 100%;
+    background-color: #1596db;
+    margin-top: 8px;
+    animation: progress 3s forwards ease-in-out;
+}
+.skill-tool-figma{
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: #1596db;
+    margin-top: 8px;
+    animation: progress 3s forwards ease-in-out;
+}

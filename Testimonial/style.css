@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.container{
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    row-gap: 20px;
+    padding: 20px;
+}
+.img-box img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+p{
+    text-align: center;
+    font-size: 17px;
+    color: #444;
+}
+.icon i{
+    font-size: 29px;
+    color: #2482ee;
+}
+.name,
+.job{
+    font-size: 25px;
+    color: #444;
+    text-align: center;
+}
